@@ -1,0 +1,44 @@
+plugins {
+    id("java-library")
+    id("com.gradleup.shadow") version "9.6.1"
+    id("xyz.jpenilla.run-paper") version "3.1.0"
+}
+
+repositories {
+    mavenCentral()
+    maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://jitpack.io")
+    maven("https://eldonexus.de/repository/maven-public/")
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:26.3.build.+")
+    implementation("de.itsgraphax:GrphxLib:-SNAPSHOT")
+    compileOnly("net.strokkur.commands:annotations-paper:2.3.0")
+    annotationProcessor("net.strokkur.commands:processor-paper:2.3.0")
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+}
+
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
+
+    runServer {
+        // Configure the Minecraft version for our task.
+        // This is the only required configuration besides applying the plugin.
+        // Your plugin's jar (or shadowJar if present) will be used automatically.
+        minecraftVersion("26.3")
+        jvmArgs("-Xms2G", "-Xmx2G", "-Dcom.mojang.eula.agree=true")
+    }
+
+    processResources {
+        val props = mapOf("version" to version)
+        filesMatching("paper-plugin.yml") {
+            expand(props)
+        }
+    }
+}

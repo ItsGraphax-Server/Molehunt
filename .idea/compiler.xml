@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.commands/processor-paper/2.3.0/11d3efb3f90b70a979cf4ee8f82fed4179aff892/processor-paper-2.3.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.commands/annotations-paper/2.3.0/ab46a63ef12f7c3bef3191995b671805f17bc372/annotations-paper-2.3.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.commands/processor-common/2.3.0/5c7f399bdba2e8f40dd69aa41fc45ebdc8415a5/processor-common-2.3.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.commands/annotations-common/2.3.0/599e635e4d6c03b474bf823ace8dbd8dadb0d7d1/annotations-common-2.3.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.commands/annotations-common-permission/2.3.0/b8db807d7dfe10780e94f92f2a3112c049396040/annotations-common-permission-2.3.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.japutil/source-map/0.1.2/b918bef58e84bdb7afe40ab3493d504cb1a2d35e/source-map-0.1.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.1.1/da12a15cd058ba90a0ff55357fb521161af4736d/auto-service-annotations-1.1.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.strokkur.japutil/code-gen/0.1.2/f395243625351c890c5edbf90da0bd44794bf404/code-gen-0.1.2.jar" />
+        </processorPath>
+        <module name="Molehunt.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="25" />
+  </component>
+</project>

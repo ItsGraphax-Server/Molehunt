@@ -1,0 +1,10 @@
+name: Molehunt
+version: '${version}'
+
+main: de.itsgraphax.molehunt.Molehunt
+bootstrapper: de.itsgraphax.molehunt.MolehuntBootstrap
+api-version: '26.3'
+load: POSTWORLD
+
+authors: [ ItsGraphax ]
+website: itsgraphax.de
